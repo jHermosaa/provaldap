@@ -1,0 +1,23 @@
+attributetype( 1.1.2.1.1 NAME 'Delictes'
+DESC 'Delicte del soci'
+EQUALITY caseIgnoreMatch
+SUBSTR caseIgnoreSubstringsMatch
+SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{1000000} )
+
+attributetype ( 1.1.2.1.2 NAME 'AnysComdemna' 
+  DESC 'Nombre d'anys de condemna del soci'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
+  SINGLE-VALUE )
+
+attributetype ( 1.1.2.1.3 NAME 'Galeres'
+  DESC 'Indica si el soci ha sigut castigat a les galeres'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  SINGLE-VALUE )
+
+
+objectclass ( 1.1.2.2.1 NAME 'marchenaAccount'
+DESC 'Delictes'
+SUP TOP
+AUXILIARY
+MUST delictes $ anysComdemna $ Galeres)
+

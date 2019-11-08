@@ -1,0 +1,39 @@
+dn: dc=jona,dc=cat
+dc: jona
+description: prova ldap
+objectClass: dcObject
+objectClass: organization
+o: jona.cat
+
+dn: ou=socis,dc=jona,dc=cat
+ou: socis
+description: socis prova
+objectclass: organizationalunit
+
+dn: idcat=1,ou=socis,dc=jona,dc=cat
+objectclass: indepeorgperson
+idcat: 1
+sardanes: FALSE
+foto: ///var/tmp/foto1.jpg
+lema: Frase o enunciado que expresan una aspiración o ideal, o un pensamiento que sirve de guía a la conducta de alguien.
+twitter: www.twitter.com/soci1
+
+dn: idcat=2,ou=socis,dc=jona,dc=cat
+objectclass: indepeorgperson
+idcat: 2
+sardanes: TRUE
+foto: ///var/tmp/foto2.jpg
+lema: Frase o enunciat que expressen una aspiració o ideal, o un pensament que serveix de guia a la conducta d'algú.
+twitter: www.twitter.com/soci2
+
+dn: idcat=3,ou=socis,dc=jona,dc=cat
+objectclass: indepeorgperson
+idcat: 3
+sardanes: TRUE
+foto: ///var/tmp/foto3.jpg
+lema: Phrase or statement that expresses an aspiration or ideal, or a thought that guides someone's behavior.
+twitter: www.twitter.com/soci3
+
+
+
+
